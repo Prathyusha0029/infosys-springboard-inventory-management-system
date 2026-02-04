@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+  <!-- LEFT : 50% (SAME DESIGN) -->
+  <div class="login-left">
+    <img src="/images/logo.png" alt="3D Image">
+    <h1>Inventory Management</h1>
+    <p>Create your account</p>
+  </div>
+
+  <!-- RIGHT : 50% -->
+  <div class="login-right">
+    <div class="box">
+      <h2>Inventory Register</h2>
+
+      <input id="ruser" placeholder="Email">
+      <input id="rpass" type="password" placeholder="Password">
+
+      <select id="rrole">
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="emp">Employee</option>
+      </select>
+
+      <button id="regBtn">Register</button>
+      <p id="rmsg"></p>
+
+      <div class="links">
+        <a href="login.html">Go to Login</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
