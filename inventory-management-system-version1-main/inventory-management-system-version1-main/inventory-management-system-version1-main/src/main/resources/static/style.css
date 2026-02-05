@@ -1,0 +1,163 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #2e2e2e;
+  color: #eaeaea;
+  padding: 20px;
+}
+
+.logout-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #63b7a6;
+  color: #0f3d3a;
+  border: none;
+  padding: 8px 16px;
+ 
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.logout-btn:hover {
+  background: #4fa493;
+}
+
+
+/* ===== PAGE TITLE ===== */
+h2 {
+  text-align: center;
+  color: #f1e6a5;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* ===== CARD / BOX ===== */
+.box {
+  background: #1f1f1f;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 1100px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== SECTION HEADINGS ===== */
+.box h3 {
+  color: #489685;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* ===== TEXT ===== */
+.box p {
+  color: #b5b5b5;
+  margin-bottom: 10px;
+}
+
+/* ===== INPUTS & SELECT ===== */
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #eaeaea;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background: #2dac93;
+  color: #0f3d3a;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4fa493;
+}
+
+/* Special button (Load Alerts) */
+button[onclick="loadAlerts()"] {
+  display: block;
+  margin: 20px auto;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+thead {
+  background: #0f3d3a;
+}
+
+th {
+  color: #63b7a6;
+  padding: 10px;
+  font-size: 14px;
+}
+
+td {
+  padding: 10px;
+  font-size: 14px;
+  color: #eaeaea;
+}
+
+tbody tr:nth-child(even) {
+  background: #262626;
+}
+
+tbody tr:hover {
+  background: #333;
+}
+
+/* ===== STATUS TEXT ===== */
+.success {
+  color: #35f585;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* ===== MESSAGE TEXT ===== */
+#pmsg, #umsg {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .box {
+    padding: 18px;
+  }
+}
